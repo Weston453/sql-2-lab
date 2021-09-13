@@ -8,3 +8,8 @@ where genre.name = 'Rock';
 select * from rock;
 
 -- 2)
+create view classical_count as
+select name, count(*) from playlist
+group by name;
+
+select * from classical_count;
